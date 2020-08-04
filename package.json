@@ -1,0 +1,18 @@
+{
+  "name": "personal-project",
+  "version": "1.0.0",
+  "description": "\"Some portfolio example\"",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "\"portfolio",
+    "exercise\""
+  ],
+  "author": "Patryk chodacki",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

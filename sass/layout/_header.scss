@@ -1,0 +1,32 @@
+.header {
+
+    text-align: left;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    
+
+    &__h1 {
+        width: 70%;
+        font-size: 4rem;
+        color: $color-gray-dark;
+        border-left: .3rem solid $color-gray-light;
+        padding: 1rem;
+    }
+
+    &__h2 {
+
+    }
+
+    &__transform {
+        transition: all 1s cubic-bezier(.48,.36,.5,1.31);
+    }
+    &__off {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    &__on {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
