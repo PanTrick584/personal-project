@@ -1,7 +1,7 @@
 .story {
     width: 70%;
-    margin-left: 2rem;
-    background-color: $color-gray-light;
+    margin-left: .5rem;
+    margin-bottom: 4rem;
     color: $color-gray;
 
     &__h1 {
@@ -9,11 +9,11 @@
     }
 
     &__p {
-        width: 70%;
-        margin-left: 2rem;
+        width: 90%;
+        // margin-left: 2rem;
         margin-top: 2rem;
         padding: 2rem 2rem 2rem 1rem;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         line-height: 1.6;
         border-left: $border-gray-light;
         color: $color-gray-light;

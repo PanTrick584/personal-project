@@ -1,6 +1,10 @@
 // DOM
+// container
+const containerDOM = document.querySelector(".container");
 // header
 const headerDOM = document.querySelector("#header");
+const headerOneDOM = document.querySelector("#headerOne");
+const headerTwoDOM = document.querySelector("#headerTwo");
 const headerBtnDOM = document.querySelector("#headerBtn");
 // nav
 const navDOM = document.querySelector("#nav");
@@ -12,40 +16,24 @@ const navAboutDOM = document.querySelector("#navAbout");
 const navProjectsDOM = document.querySelector("#navProjects");
 const navContactDOM = document.querySelector("#navContact");
 //section story
-const storySectionDOM = document.querySelector("#storySection")
+const storySectionDOM = document.querySelector("#storySection");
 const storyDOM = document.querySelector('#story');
+const storyOneDOM = document.querySelector('#storyHeaderOne');
 const storyParagraphDOM = document.querySelector('#storyP');
+// node lists
+const findHeaderDOM = document.querySelectorAll(".findHeader");
+const findParagraphDOM = document.querySelectorAll(".findParagraph");
 
-// check if in veiwport
-const isInViewport = (element) => {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 
-        &&
-        rect.left >= 0
-         &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
 // FUNCTIONS
-
-const slideEvents = () => {
-    setTimeout( ()=>{
-        storyDOM.classList.remove("story__off");
-        storyDOM.classList.add("story__on");
-    }, 200);
-    setTimeout( ()=>{
-        storyParagraphDOM.classList.remove("off");
-        storyParagraphDOM.classList.add("on");
-    }, 400);
-   
-}    
 // header slide onload
 const headerSlide = () => {
-    headerDOM.classList.remove("header__off");
-    headerDOM.classList.add("header__on");
-}
+    // HEADER ONE SLIDE UP
+    headerOneDOM.classList.remove("off__up");
+    headerOneDOM.classList.add("on__up");
+    // HEADER TWO SLIDE RIGHT
+    headerTwoDOM.classList.remove("off__right");
+    headerTwoDOM.classList.add("on__right");
+}   
 
 //nav appear after click
 const navMenuDisplay = () => {
@@ -71,12 +59,44 @@ const navMenuDisplay = () => {
     })
 }
 
+const slideHeader = (header) => {
+
+    setTimeout( ()=>{
+        header.classList.remove("off__right");
+        header.classList.add("on__right");
+    }, 200);
+} 
+const slideParagraph = (paragraph) => {
+    
+    setTimeout( ()=>{
+        paragraph.classList.remove("off__right");
+        paragraph.classList.add("on__right");
+    }, 400);
+} 
+
+// check if in veiwport
+function checkElementPosition(element) {
+
+    //Get element properties
+    let rect = element.getBoundingClientRect();
+    // GET SCREEN HEIGHT
+    let wHeight = document.documentElement.clientHeight;
+    //Check if in view    
+    let isVisible = (rect.top <= wHeight);
+    //Return 
+    return isVisible;
+  }
+
 const checkViewport = () => {
-    isInViewport(storySectionDOM) ? console.log("yep") : console.log("nope");
-    // slideEvents() : console.log("nope");
+    findHeaderDOM.forEach( header => {
+        checkElementPosition( header) ? slideHeader( header ) : "";
+    })
+    findParagraphDOM.forEach( paragraph => {
+        checkElementPosition( paragraph ) ? slideParagraph( paragraph ) : "";
+    })
+    
 }
 // EVENTS
-
 // header button
 headerBtnDOM.addEventListener('click', () => {
     let storySection = storySectionDOM.getBoundingClientRect();
@@ -87,17 +107,22 @@ headerBtnDOM.addEventListener('click', () => {
     }
   
     window.scrollTo(scrollOptions);
-    slideEvents();
-  });
+});
 
 // window onload
 addEventListener("DOMContentLoaded", () => {
 
+    // HEADER SLIDE
     setTimeout(() => {
         headerSlide();
         window.scroll(0, 0);
     }, 50);
 
     navMenuDisplay();
-    checkViewport();
-})
+
+    // SECTIONS SLIDE AFTER HEADER LOADED
+    setTimeout(() => {
+        window.addEventListener("scroll", checkViewport);
+    }, 100);
+    
+});

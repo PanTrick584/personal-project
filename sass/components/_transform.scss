@@ -1,13 +1,22 @@
 .transition {
     transition: all 1s cubic-bezier(.48,.36,.5,1.31);
 }
-
-.off {
+// TRANSFORM UP
+.off__up {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(80%);
 }
-
-.on {
+.on__up {
     opacity: 1;
     transform: translateY(0);
+}
+// TRANSFORM RIGHT
+.off__right {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.on__right {
+    opacity: 1;
+    transform: translateX(0);
 }

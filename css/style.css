@@ -17,36 +17,47 @@ body {
 .transition {
   transition: all 1s cubic-bezier(0.48, 0.36, 0.5, 1.31); }
 
-.off {
+.off__up {
   opacity: 0;
-  transform: translateY(-100%); }
+  transform: translateY(80%); }
 
-.on {
+.on__up {
   opacity: 1;
   transform: translateY(0); }
 
+.off__right {
+  opacity: 0;
+  transform: translateX(-100%); }
+
+.on__right {
+  opacity: 1;
+  transform: translateX(0); }
+
 .h1 {
   width: 70%;
-  font-size: 4rem;
-  padding: 1rem; }
+  font-size: 3rem;
+  color: #16161a;
+  padding: 1rem;
+  border-left: 0.3rem solid #97a98b;
+  margin-top: 2rem; }
 
 .header {
   text-align: left;
   margin-top: 8rem;
-  margin-left: 2rem; }
+  margin-left: .5rem; }
   .header__h1 {
     color: #16161a;
     border-left: 0.3rem solid #97a98b; }
   .header__h2 {
     width: 70%;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     padding: 1rem;
     color: #97a98b; }
   .header__btn {
     width: 70%;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    text-align: left;
+    text-align: start;
     padding: 1rem;
     border: 0.3rem solid #97a98b;
     cursor: pointer; }
@@ -55,14 +66,6 @@ body {
     .header__btn-a:link, .header__btn-a:visited {
       text-decoration: none;
       color: #97a98b; }
-  .header__transform {
-    transition: all 1s cubic-bezier(0.48, 0.36, 0.5, 1.31); }
-  .header__off {
-    opacity: 0;
-    transform: translateY(80%); }
-  .header__on {
-    opacity: 1;
-    transform: translateY(0); }
 
 .nav {
   width: 100%;
@@ -79,7 +82,7 @@ body {
     text-align: left;
     color: #88bef5;
     padding: 1rem;
-    margin-left: 2rem;
+    margin-left: .5rem;
     margin-top: 1rem;
     border-left: 0.3rem solid #97a98b; }
   .nav__box {
@@ -135,17 +138,16 @@ body {
 
 .story {
   width: 70%;
-  margin-left: 2rem;
-  background-color: #97a98b;
+  margin-left: .5rem;
+  margin-bottom: 4rem;
   color: #3b3c38; }
   .story__h1 {
     height: 5rem; }
   .story__p {
-    width: 70%;
-    margin-left: 2rem;
+    width: 90%;
     margin-top: 2rem;
     padding: 2rem 2rem 2rem 1rem;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     border-left: 0.3rem solid #97a98b;
     color: #97a98b; }
@@ -162,7 +164,7 @@ body {
     transform: translateY(0); }
 
 .container {
-  height: 100%;
+  position: relative;
   background-color: #3b3c38; }
 
 header {
@@ -171,4 +173,7 @@ header {
 
 .section__story {
   height: 100vh;
-  margin-top: 6rem; }
+  background-color: #3b3c38; }
+
+.section__skills {
+  height: 100vh; }
