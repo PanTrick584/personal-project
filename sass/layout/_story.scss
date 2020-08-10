@@ -1,3 +1,38 @@
 .story {
+    width: 70%;
     margin-left: 2rem;
+    background-color: $color-gray-light;
+    color: $color-gray;
+
+    &__h1 {
+        height: 5rem;
+    }
+
+    &__p {
+        width: 70%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        padding: 2rem 2rem 2rem 1rem;
+        font-size: 1.8rem;
+        line-height: 1.6;
+        border-left: $border-gray-light;
+        color: $color-gray-light;
+    }
+
+    &__transform {
+        transition: opacity .8s cubic-bezier(.48,.36,.5,1.31);
+        transition: transform .8s cubic-bezier(.48,.36,.5,1.31);
+    }
+    &__off {
+        width: 0;
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    &__on {
+        width: 70%;
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+

@@ -14,7 +14,8 @@
     <div class="container">
             <!-- NAVIGATION -->
         <nav class="nav" id="nav">
-            <div class="nav__box nav__box-transform nav__box-off" id="navBox">
+            <h2 class="nav__name"></h2>
+            <div class="nav__box nav__box-transform nav__box-off" id="navBox"> 
                 <div class="nav__box-span"></div>
                 <div class="nav__box-span"></div>
                 <div class="nav__box-span"></div>
@@ -22,35 +23,53 @@
             
             <ul class="nav__menu nav__menu-transform nav__menu-off" id="navMenu">
                 <li class="nav__menu-li ">
-                    <a href="#nav" class="nav__menu-a">home</a>
+                    <a href="#" class="nav__menu-a" id="navHome">home</a>
                 </li>
                 <li class="nav__menu-li ">
-                    <a href="#story" class="nav__menu-a">about me</a>
+                    <a href="#" class="nav__menu-a" id="navAbout">about me</a>
                 </li>
-                
-                <li class="nav__menu-li">projects</li>
-                <li class="nav__menu-li">contact</li>
-                <li class="nav__menu-li">something</li>
+                <li class="nav__menu-li">
+                    <a href="#" class="nav__menu-a" id="navProjects">projects</a>
+                </li>
+                <li class="nav__menu-li">
+                    <a href="#" class="nav__menu-a" id="navContact">contact</a>
+                </li>
+                <div class="nav__menu-photo"></div>
             </ul>
         </nav>
         <!-- END OF NAVIGATION -->
         <!-- HEADER -->
         <header class="header header__transform header__off" id="header">
-            <h1 class="header__h1 " id="header__h1">hello! <br /> my name is <br /> Patryk Chodacki </h1>
+            <h1 class="header__h1 h1" id="header__h1">hello! <br /> my name is <br /> Patryk Chodacki </h1>
+            <h2 class="header__h2" id="header__h2">i am web designer from Poland</h2>
+            <div class="btn header__btn" id="headerBtn">
+                <a href="#" class="header__btn-a" >something more about?</a>
+            </div>
             <div class="header__box">
                 <img src="img/" alt="" class="header__img">
             </div>
         </header>
         <!-- EDN OF HEADER -->
-        <section class="section__story" id="story">
-            <div class="story">
-                <h1 class="story__h1 header__h1">
-                    i can tell you few things if you want to hear
+        <!-- SECTION STORY -->
+        <section class="section__story " id="storySection">
+            <div class="story story__transform story__off" id="story">
+                <h1 class="story__h1 h1">
+                    about
                 </h1>
             </div>
-            
-
-        </section>
+            <p class="story__p transition off" id="storyP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, porro sunt id voluptatem animi esse harum velit tenetur itaque consequuntur. Ducimus sint atque incidunt unde, possimus inventore nobis amet quo hic, quas distinctio excepturi similique impedit eius ut! Commodi dolore officia repellendus modi in officiis. Consequuntur ea praesentium error quo.</p>
+         </section>
+         <!-- END OF SECTION STORY -->
+        <!-- SECTION STORY -->
+        <section class="section__skills " id="storySection">
+            <div class="skills story__transform story__off" id="story">
+                <h1 class="story__h1 h1">
+                    about 
+                </h1>
+            </div>
+            <p class="story__p transition off" id="storyP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, porro sunt id voluptatem animi esse harum velit tenetur itaque consequuntur. Ducimus sint atque incidunt unde, possimus inventore nobis amet quo hic, quas distinctio excepturi similique impedit eius ut! Commodi dolore officia repellendus modi in officiis. Consequuntur ea praesentium error quo.</p>
+         </section>
+         <!-- END OF SECTION STORY -->
     </div>
     <!-- END OF CONTAINER -->
 

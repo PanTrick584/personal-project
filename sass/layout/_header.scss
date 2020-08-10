@@ -1,22 +1,45 @@
 .header {
 
     text-align: left;
-    margin-top: 6rem;
+    margin-top: 8rem;
     margin-left: 2rem;
     
 
     &__h1 {
-        width: 70%;
-        font-size: 4rem;
+       
         color: $color-gray-dark;
-        border-left: .3rem solid $color-gray-light;
-        padding: 1rem;
+        border-left: $border-gray-light;
     }
 
     &__h2 {
-
+        width: 70%;
+        font-size: 2.5rem;
+        padding: 1rem;
+        color: $color-gray-light;
+        // border-left: $border-gray-dark;
     }
 
+    &__btn {
+        width: 70%;
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-align: left;
+        padding: 1rem;
+        border: $border-gray-light;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-gray-dark;
+        }
+
+        &-a:link,
+        &-a:visited {
+            text-decoration: none;
+            color: $color-gray-light;
+        }
+    }
+
+    // TRANSFORM PROP
     &__transform {
         transition: all 1s cubic-bezier(.48,.36,.5,1.31);
     }
