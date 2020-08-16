@@ -1,0 +1,25 @@
+.footer {
+    margin-left: $margin-phone;
+
+    @include respond(tab-port) {
+        margin-left: $margin-tab-port;
+    }
+    @include respond(tab-land) {
+        margin-left: $margin-tab-land;
+    }
+
+    &__contact {
+        list-style: none;
+
+        &-li {
+            font-size: 1.2rem;
+            font-weight: 400;
+            padding: .5rem;
+            color: $color-gray-light;
+
+            @include respond(tab-port) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

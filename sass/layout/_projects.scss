@@ -1,0 +1,62 @@
+.projects{
+    width: $width-phone;
+    margin-left: $margin-phone;
+
+    @include respond(tab-port) {
+        width: $width-tab-port;
+        margin-left: $margin-tab-port;
+    }
+    @include respond(tab-land) {
+        width: $width-tab-land;
+        margin-left: $margin-tab-land;
+    }
+
+    &__h1 {
+        color: $color-gray-light;
+    }
+    &__box {
+        height: 100vh;
+    }
+    &__box:not(:last-child) {
+        
+        border-bottom: $border-blue-dark;
+    }
+
+    &__link {
+        width: 100%;
+        height: 100%;
+        &:active,
+        &visited {
+            text-decoration: none;
+
+        }
+        
+        &-box {
+            width: 100%;
+            height: 14rem;
+            margin: 2rem 0 0 0;
+            background-image: url("../img/pizzaBuilder.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: all .2s;
+
+            @include respond(phone) {
+                height: 20rem;
+            }
+
+            &:hover {
+                transform: translateX(5%);
+            }
+            &--pizza {
+                background-image: url("../img/pizzaBuilder.jpg");
+            }
+            &--happines {
+                background-image: url("../img/happinesShow.jpg");
+            }
+        }
+    }
+
+    &__p {
+        color: $color-gray-light;
+    }
+}

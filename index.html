@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">   
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -36,7 +36,8 @@
                 <li class="nav__menu-li">
                     <a href="#" class="nav__menu-a" id="navContact">contact</a>
                 </li>
-                <div class="nav__menu-photo"></div>
+                <div class="nav__menu-photo">
+                </div>
             </ul>
             <!-- END OF LIST MENU -->
         </nav>
@@ -44,36 +45,102 @@
 
         <!-- HEADER -->
         <header class="header" id="header">
-            <h1 class="header__h1 h1 transition off__up" id="headerOne">hello! <br /> my name is <br /> Patryk Chodacki </h1>
-            <h2 class="header__h2 transition off__right" id="headerTwo">i am web designer</h2>
-            <div class="btn header__btn" id="headerBtn">
-                <a href="#" class="header__btn-a" >something more about?</a>
+            <h1 class="header__h1 h1 transition off__up" id="headerOne"> <span class="header__span-name">PATRYK</span> <span class="header__span-last">CHODACKI</span></h1>
+            <h2 class="header__h2 h2 transition off__right">i am web designer</h2>
+            <div class="btn header__btn hover__orange-dark" id="headerBtnAbout">
+                <a href="#" class="header__btn-a" >about me</a>
             </div>
-            <div class="header__box">
-                <img src="img/" alt="" class="header__img">
+            <div class="btn header__btn  hover__blue-dark" id="headerBtnProjects">
+                <a href="#" class="header__btn-a " >projects</a>
             </div>
+            <!-- <div class="header__box">
+                <img src="img/menu_picture.jpg" alt="" class="header__img">
+            </div> -->
         </header>
         <!-- EDN OF HEADER -->
         <!-- SECTION STORY -->
         <section class="section__story" id="storySection">
             <div class="story" id="story">
-                <h1 class="story__h1 h1 transition off__right findHeader" id="storyHeaderOne">
-                    about
-                </h1>
-                <p class="story__p transition off__right findParagraph" id="storyP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, porro sunt id voluptatem animi esse harum velit tenetur itaque consequuntur. Ducimus sint atque incidunt unde, possimus inventore nobis amet quo hic, quas distinctio excepturi similique impedit eius ut! Commodi dolore officia repellendus modi in officiis. Consequuntur ea praesentium error quo.</p>
+                <div class="story__box">
+                    <h1 class="story__h1 h1 transition off__right findHeader" id="storyHeaderOne">
+                        EDUCATION AND CAREER
+                    </h1>
+                    <p class="story__p p transition off__right findParagraph" id="storyP">
+                        in 2013 after my highschool i decided to arrive to Kraków, and start my work in a small company, where i was working earlier, during holidays. Always dreamed to learn how become creative and use it to my ideas, how to create something more and show it to others. Thats why i went to Academy of Fine Arts in Kraków</p>
+                </div>
+                <div class="story__box">
+                    <h1 class="skills__h1 h1 transition off__right findHeader">
+                        WORKS 
+                    </h1>
+                    <p class="story__p p transition off__right findParagraph">Entire time of studying I was working too, so I learned how to perfectly managed my time, how to ogranize my work and how important is to focus at aim. Few years worked in small artistic company, later when I had more time, hired on more responsible position in bigger undertaking. I was responsible for customer service, small section managment and ordering goods</p>
+                </div>
             </div>
          </section>
          <!-- END OF SECTION STORY -->
-        <!-- SECTION STORY -->
-        <section class="section__skills " id="skillSection">
-            <div class="skills" id="skills">
-                <h1 class="skills__h1 h1 transition off__right findHeader">
-                    about 
+        <!-- SECTION SKILLS -->
+        <section class="section__projects" id="projectsSection">
+            <!-- PROJECTS CONTAINER -->
+            <div class="projects" id="projects">
+                <h1 class="projects__h1 h1 transition off__up findHeader">
+                    PROJECTS
                 </h1>
+                <div class="projects__box">
+                    <p class="projects__p p transition off__right findParagraph">
+                        Projects presented here are created fully by my own, only inpired by some of courses I did or founded ideas on websides dedicated for programmers. Most of them are based on HTML, CSS and vanilla JavaScript, and they contains hundreds of hours of mine, while I was learning and practising step by step new elements of front end development 
+                    </p>
+                    
+                </div>
+                <!-- PROJECT PIZZA BUILDER -->
+                <div class="projects__box">
+                    <h1 class="projects__h1 h1 transition off__right findHeader">
+                         pizza bulder
+                    </h1>
+                    <div class="projects__linkContainer transition off__right findParagraph">
+                        <a href="https://pizza-builder-app.netlify.app" class="projects__link">
+                            <div class="projects__link-box projects__link-box--pizza"></div>
+                        </a>
+                    </div>
+                    <p class="projects__p p transition off__right findParagraph">
+                       It's application to creating your own pizza with ingredients only you may choose. Its adding every item to the basket and counting dynamicly entire cost of choosed food. Most of elements are generated dynamicaly from my own little ingredients database, such as Ingedients Sections or Ingredients Elements itself
+                    </p>                   
+                </div>
+                <!-- END OF PROJECT PIZZA BUILDER -->
+                <!-- SECTION PROJECT -->
+                <div class="projects__box">
+                    <h1 class="projects__h1 h1 transition off__right findHeader">
+                        HAPPINES SHOW
+                    </h1>
+                    <div class="projects__linkContainer transition off__right findParagraph">
+                        <a href="https://happines-show.netlify.app/#" class="projects__link transition off__right findParagraph">
+                            <div class="projects__link-box projects__link-box--happines"></div>
+                        </a>
+                    </div>
+                    <p class="projects__p p transition off__right findParagraph">
+                        Simple slider presentation where i was practising interactions between CSS and JS, testing DOM and CSSOM behaviors
+                    </p>
+                </div>
             </div>
-            <p class="story__p transition off__right findParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, porro sunt id voluptatem animi esse harum velit tenetur itaque consequuntur. Ducimus sint atque incidunt unde, possimus inventore nobis amet quo hic, quas distinctio excepturi similique impedit eius ut! Commodi dolore officia repellendus modi in officiis. Consequuntur ea praesentium error quo.</p>
+            <!-- END OF PROJECTS CONTAINER -->
          </section>
-         <!-- END OF SECTION STORY -->
+         <!-- END OF SECTION PROJECT -->
+         <footer class="section__footer">
+             <div class="footer">
+                 <h1 class="footer__h1 h2">
+                     PATRYK CHODACKI
+                 </h1>
+                 <div class="footer__contact h2">
+                     <li class="footer__contact-li">
+                         Email: chodacki.pc@gmail.com
+                     </li>
+                     <li class="footer__contact-li">
+                         Tel: 730-137-834
+                     </li>
+                     <li class="footer__contact-li">
+                        Tel: 692-863-757
+                     </li>
+                 </div>
+             </div>
+         </footer>
     </div>
     <!-- END OF CONTAINER -->
 

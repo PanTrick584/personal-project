@@ -1,38 +1,26 @@
 .story {
-    width: 70%;
-    margin-left: .5rem;
-    margin-bottom: 4rem;
+    width: $width-phone;
+    height: 100%;
+    margin-left: $margin-phone;
     color: $color-gray;
 
-    &__h1 {
-        height: 5rem;
+    @include respond(tab-port) {
+        width: $width-tab-port;
+        margin-left: $margin-tab-port;
     }
-
+    @include respond(tab-land) {
+        width: $width-tab-land;
+        margin-left: $margin-tab-land;
+    }
+    
+    &__box {
+        height: 100vh;
+    }
+    &__box:not(:last-of-type) {
+        border-bottom: $border-gray-light;
+    }
     &__p {
-        width: 90%;
-        // margin-left: 2rem;
-        margin-top: 2rem;
-        padding: 2rem 2rem 2rem 1rem;
-        font-size: 1.2rem;
-        line-height: 1.6;
-        border-left: $border-gray-light;
-        color: $color-gray-light;
-    }
-
-    &__transform {
-        transition: opacity .8s cubic-bezier(.48,.36,.5,1.31);
-        transition: transform .8s cubic-bezier(.48,.36,.5,1.31);
-    }
-    &__off {
-        width: 0;
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-
-    &__on {
-        width: 70%;
-        opacity: 1;
-        transform: translateY(0);
+        width: 100%; 
     }
 }
 

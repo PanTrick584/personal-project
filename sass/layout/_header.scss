@@ -1,40 +1,45 @@
 .header {
-
+    width: $width-phone;
     text-align: left;
     margin-top: 8rem;
-    margin-left: .5rem;
+    margin-left: $margin-phone;
+
+    @include respond(tab-port) {
+        width: $width-tab-port;
+        margin-left: $margin-tab-port;
+    }
+    @include respond(tab-land) {
+        width: $width-tab-land;
+        margin-left: $margin-tab-land;
+    }
 
     &__h1 {
-       
-        color: $color-gray-dark;
+        color: $color-gray-light;
         border-left: $border-gray-light;
+    }
+    &__span-name {
+
+    }
+    &__span-last {
+
     }
 
     &__h2 {
-        width: 70%;
-        font-size: 1.8rem;
-        padding: 1rem;
         color: $color-gray-light;
-        // border-left: $border-gray-dark;
     }
 
     &__btn {
-        width: 70%;
-        font-size: 1.8rem;
-        font-weight: 400;
         text-align: start;
         padding: 1rem;
-        border: $border-gray-light;
+        margin: 2rem 0;
         cursor: pointer;
-
-        &:hover {
-            background-color: $color-gray-dark;
-        }
 
         &-a:link,
         &-a:visited {
             text-decoration: none;
             color: $color-gray-light;
+            font-size: 1.8rem;
+            font-weight: 700;
         }
     }
     

@@ -6,14 +6,33 @@ $color-gray-light: #97a98b;
 $color-gray-dark: #16161a;
 
 $color-blue: #086972;
-$color-blue-light: #88bef5;
-$color-blue-dark: #071a52;
+$color-blue-light: #4997a0;
+$color-blue-dark: #003e47;
 
-$color-green: #2cb67d;
-$color-green-light: #96f7d2;
-$color-green-dark: #0b8457;
+$color-orange: #ff9671;
+$color-orange-light: #ffc8a0;
+$color-orange-dark: #c86745;
 
 //  BORDER
 
 $border-gray-light: .3rem solid $color-gray-light;
+$border-gray: .3rem solid $color-gray;
 $border-gray-dark: .3rem solid $color-gray-dark;
+
+$border-blue: .3rem solid $color-blue;
+$border-blue-dark: .3rem solid $color-blue-dark;
+$border-orange-dark: .3rem solid $color-orange-dark;
+
+$border-section: .5rem solid $color-gray-dark;
+
+//  MARGINS
+
+$margin-phone: .5rem;
+$margin-tab-port: 2rem;
+$margin-tab-land: 10rem;
+
+// WIDTHS
+
+$width-phone: 80%;
+$width-tab-port: 65%;
+$width-tab-land: 45%;

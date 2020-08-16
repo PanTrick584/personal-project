@@ -5,7 +5,8 @@ const containerDOM = document.querySelector(".container");
 const headerDOM = document.querySelector("#header");
 const headerOneDOM = document.querySelector("#headerOne");
 const headerTwoDOM = document.querySelector("#headerTwo");
-const headerBtnDOM = document.querySelector("#headerBtn");
+const headerBtnAboutDOM = document.querySelector("#headerBtnAbout");
+const headerBtnProjectsDOM = document.querySelector("#headerBtnProjects");
 // nav
 const navDOM = document.querySelector("#nav");
 const navBoxDOM = document.querySelector("#navBox");
@@ -20,7 +21,10 @@ const storySectionDOM = document.querySelector("#storySection");
 const storyDOM = document.querySelector('#story');
 const storyOneDOM = document.querySelector('#storyHeaderOne');
 const storyParagraphDOM = document.querySelector('#storyP');
+// SECTION PROJECTS
+const projectsSectionDOM = document.querySelector('#projectsSection')
 // node lists
+const headerTwoAllDOM = document.querySelectorAll(".header__h2")
 const findHeaderDOM = document.querySelectorAll(".findHeader");
 const findParagraphDOM = document.querySelectorAll(".findParagraph");
 
@@ -31,8 +35,11 @@ const headerSlide = () => {
     headerOneDOM.classList.remove("off__up");
     headerOneDOM.classList.add("on__up");
     // HEADER TWO SLIDE RIGHT
-    headerTwoDOM.classList.remove("off__right");
-    headerTwoDOM.classList.add("on__right");
+    headerTwoAllDOM.forEach( header => {
+        header.classList.remove("off__right");
+        header.classList.add("on__right");
+    })
+    
 }   
 
 //nav appear after click
@@ -97,9 +104,20 @@ const checkViewport = () => {
     
 }
 // EVENTS
-// header button
-headerBtnDOM.addEventListener('click', () => {
+// header button About
+headerBtnAboutDOM.addEventListener('click', () => {
     let storySection = storySectionDOM.getBoundingClientRect();
+    let scrollOptions = {
+      left: storySection.left,
+      top: storySection.top,
+      behavior: 'smooth'
+    }
+  
+    window.scrollTo(scrollOptions);
+});
+// header button Projects
+headerBtnProjectsDOM.addEventListener('click', () => {
+    let storySection = projectsSectionDOM.getBoundingClientRect();
     let scrollOptions = {
       left: storySection.left,
       top: storySection.top,

@@ -1,0 +1,17 @@
+.hover{
+    &__blue-dark {
+        border-right: $border-blue-dark;
+        transition: all .2s;
+        &:hover {
+            background-color: $color-blue;
+        }
+    }
+    &__orange-dark {
+        border-right: $border-orange-dark;
+        transition: all .2s;
+        &:hover {
+            background-color: $color-orange;
+        }
+        
+    }
+}

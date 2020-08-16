@@ -5,20 +5,28 @@
     left: 0;
     position: fixed;
     z-index: 900;
-    // background-color: $color-gray;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     &__name {
+        cursor: pointer;
         font-size: 1.8rem;
         text-align: left;
         color: $color-blue-light;
-        padding: 1rem;
-        margin-left: .5rem;
+        padding: 1.5rem .3rem 1.5rem 0;
+        margin-left: $margin-phone;
         margin-top: 1rem;
         border-left: $border-gray-light;
+
+        @include respond(tab-port) {
+            margin-left: $margin-tab-port;
+        }
+        @include respond(tab-land) {
+            margin-left: $margin-tab-land;
+        }
+
     }
     &__box {
         cursor: pointer;
@@ -30,11 +38,17 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        
+
+        &:hover &-span {
+           background-color: $color-gray-dark;
+        }
 
         &-span {
             width: 100%;
             height: .3rem;
-            background-color: $color-gray-dark;
+            background-color: $color-gray-light;
+            transition: all .2s;
         }
 
         &-transform {
@@ -59,6 +73,13 @@
         list-style: none;
         padding: 1rem 0 1rem 1rem;
 
+        @include respond(tab-port) {
+           width: 35%;
+        }
+        @include respond(tab-land) {
+           width: 25%;
+        }
+
 
         &-transform {
             transition: all .2s ease-in;
@@ -76,21 +97,31 @@
             font-weight: 700;
             color: $color-blue;
             padding: .5rem 1rem;
+
+            
         }
         &-a,
         &-a:link,
         &-a:visited {
             text-decoration: none;
-            color: $color-blue; 
-            &:active {
+            color: $color-gray-light; 
+            &:hover {
                 color: $color-blue-light;
+            }
+            &:active {
+                color: $color-blue-dark;
             }
         }      
         
         &-photo {
-            background-color: red;
-            height: 100%;
             width: 100%;
+            height: 100%;
+           background-image: url("../img/menu__img.jpg");
+           background-size: cover;
+
+        }
+        &-pic {
+            background-size: cover;
         }
     }
 }

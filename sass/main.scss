@@ -7,10 +7,13 @@
 
 @import "components/transform";
 @import "components/headers";
+@import "components/paragraphs";
+@import "components/hover";
 
 @import "layout/header";
 @import "layout/nav";
 @import "layout/story";
-@import "layout/skills";
+@import "layout/projects";
+@import "layout/footer";
 
 @import "pages/home";
