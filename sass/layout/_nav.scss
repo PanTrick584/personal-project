@@ -20,6 +20,7 @@
         margin-top: 1rem;
         border-left: $border-gray-light;
 
+
         @include respond(tab-port) {
             margin-left: $margin-tab-port;
         }

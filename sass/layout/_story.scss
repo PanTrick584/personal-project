@@ -4,13 +4,18 @@
     margin-left: $margin-phone;
     color: $color-gray;
 
+    display: flex;
+    flex-direction: column;
+
     @include respond(tab-port) {
         width: $width-tab-port;
         margin-left: $margin-tab-port;
     }
     @include respond(tab-land) {
         width: $width-tab-land;
-        margin-left: $margin-tab-land;
+        margin: 0 auto;
+
+        justify-content: center;
     }
     
     &__box {

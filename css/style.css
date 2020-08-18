@@ -45,6 +45,9 @@ body {
   @media (min-width: 39.1em) {
     .h1 {
       font-size: 6rem; } }
+  @media (min-width: 64em) {
+    .h1 {
+      font-size: 8rem; } }
 
 .h2 {
   font-size: 1.8rem;
@@ -66,12 +69,12 @@ body {
   color: #3b3c38; }
   @media (min-width: 26.56em) {
     .p {
-      font-size: 1.6rem;
-      line-height: 2; } }
+      font-size: 1.8rem;
+      line-height: 2.2; } }
   @media (min-width: 39.1em) {
     .p {
       font-size: 1.8rem;
-      line-height: 2.2; } }
+      line-height: 2; } }
 
 .hover__blue-dark {
   border-right: 0.3rem solid #003e47;
@@ -89,7 +92,9 @@ body {
   width: 80%;
   text-align: left;
   margin-top: 8rem;
-  margin-left: 0.5rem; }
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column; }
   @media (min-width: 39.1em) {
     .header {
       width: 65%;
@@ -97,12 +102,18 @@ body {
   @media (min-width: 64em) {
     .header {
       width: 45%;
-      margin-left: 10rem; } }
+      margin: 0 auto;
+      align-items: left;
+      justify-content: center; } }
   .header__h1 {
     color: #97a98b;
     border-left: 0.3rem solid #97a98b; }
+  .header__span-name {
+    color: #ffc8a0; }
+  .header__span-last {
+    color: #4997a0; }
   .header__h2 {
-    color: #97a98b; }
+    color: #16161a; }
   .header__btn {
     text-align: start;
     padding: 1rem;
@@ -208,7 +219,9 @@ body {
   width: 80%;
   height: 100%;
   margin-left: 0.5rem;
-  color: #3b3c38; }
+  color: #3b3c38;
+  display: flex;
+  flex-direction: column; }
   @media (min-width: 39.1em) {
     .story {
       width: 65%;
@@ -216,7 +229,8 @@ body {
   @media (min-width: 64em) {
     .story {
       width: 45%;
-      margin-left: 10rem; } }
+      margin: 0 auto;
+      justify-content: center; } }
   .story__box {
     height: 100vh; }
   .story__box:not(:last-of-type) {
@@ -226,7 +240,9 @@ body {
 
 .projects {
   width: 80%;
-  margin-left: 0.5rem; }
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column; }
   @media (min-width: 39.1em) {
     .projects {
       width: 65%;
@@ -234,7 +250,9 @@ body {
   @media (min-width: 64em) {
     .projects {
       width: 45%;
-      margin-left: 10rem; } }
+      margin: 0 auto;
+      justify-content: center;
+      align-items: left; } }
   .projects__h1 {
     color: #97a98b; }
   .projects__box {
@@ -267,13 +285,17 @@ body {
     color: #97a98b; }
 
 .footer {
-  margin-left: 0.5rem; }
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column; }
   @media (min-width: 39.1em) {
     .footer {
       margin-left: 2rem; } }
   @media (min-width: 64em) {
     .footer {
-      margin-left: 10rem; } }
+      justify-content: center;
+      align-items: left;
+      margin: 0 auto; } }
   .footer__contact {
     list-style: none; }
     .footer__contact-li {

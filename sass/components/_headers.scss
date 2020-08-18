@@ -11,6 +11,9 @@
     @include respond(tab-port) {
         font-size: 6rem;
     }
+    @include respond(tab-land) {
+        font-size: 8rem;
+    }
 }
 
 .h2 {

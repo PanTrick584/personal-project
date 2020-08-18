@@ -7,12 +7,12 @@
     color: $color-gray;
 
     @include respond(phone) {
-        font-size: 1.6rem;
-        line-height: 2;
+        font-size: 1.8rem;
+        line-height: 2.2;
     }
     @include respond(tab-port) {
         font-size: 1.8rem;
-        line-height: 2.2;
+        line-height: 2;
     }
 
 }
