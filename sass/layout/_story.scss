@@ -4,28 +4,22 @@
     margin-left: $margin-phone;
     color: $color-gray;
 
-    display: flex;
-    flex-direction: column;
-
     @include respond(tab-port) {
         width: $width-tab-port;
         margin-left: $margin-tab-port;
     }
     @include respond(tab-land) {
-        width: $width-tab-land;
-        margin: 0 auto;
+        width: 100%;
+        margin-left: 0;
+    }
+    // &__h1 {
 
-        justify-content: center;
-    }
-    
-    &__box {
-        height: 100vh;
-    }
-    &__box:not(:last-of-type) {
-        border-bottom: $border-gray-light;
-    }
+    // }
     &__p {
-        width: 100%; 
+
+        @include respond(tab-land) {
+            // margin-left: $margin-p-tab-land;
+        }
     }
 }
 

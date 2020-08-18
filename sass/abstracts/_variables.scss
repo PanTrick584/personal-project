@@ -16,6 +16,9 @@ $color-orange-dark: #c86745;
 //  BORDER
 
 $border-gray-light: .3rem solid $color-gray-light;
+$border-gray-light-port: .5rem solid $color-gray-light;
+$border-gray-light-land: .7rem solid $color-gray-light;
+$border-gray-light-standart: .7rem solid $color-gray-light;
 $border-gray: .3rem solid $color-gray;
 $border-gray-dark: .3rem solid $color-gray-dark;
 
@@ -28,8 +31,13 @@ $border-section: .5rem solid $color-gray-dark;
 //  MARGINS
 
 $margin-phone: .5rem;
+$margin-p-phone: .8rem;
+
 $margin-tab-port: 2rem;
+$margin-p-tab-port: 2.5rem;
+
 $margin-tab-land: 10rem;
+$margin-p-tab-land: 10.7rem;
 
 // WIDTHS
 

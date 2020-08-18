@@ -1,68 +1,61 @@
 .projects{
     width: $width-phone;
+    height: 100%;
     margin-left: $margin-phone;
-
-    display: flex;
-    flex-direction: column;
+    color: $color-gray-light;
 
     @include respond(tab-port) {
         width: $width-tab-port;
         margin-left: $margin-tab-port;
     }
     @include respond(tab-land) {
-        width: $width-tab-land;
-        margin: 0 auto;
-
-        justify-content: center;
-        align-items: left;
+        width: 100%;
+        margin-left: 0;
     }
 
-    &__h1 {
-        color: $color-gray-light;
-    }
-    &__box {
-        height: 100vh;
-    }
-    &__box:not(:last-child) {
-        
-        border-bottom: $border-blue-dark;
-    }
+    &__linkBox {
+        width: 100%;
+        height: 20%;
 
+        align-self: center;
+
+        margin: 2rem auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: all .2s;
+
+        &:hover {
+            transform: translateX(5%);
+        }
+        &-pizza {
+            background-image: url("../img/pizzaBuilder.jpg");
+        }
+        &-happines {
+            background-image: url("../img/happinesShow.jpg");
+        }
+
+        @include respond(phone) {
+            height: 25%;
+        }
+        @include respond(tab-port) {
+            height: 35%;
+        }
+        @include respond(tab-land) {
+            width: $width-tab-land;
+            // width: 100%;
+        }
+        @include respond(standart-screen) {
+            width: $width-tab-land;
+            height: 50%;
+        }
+    }
     &__link {
         width: 100%;
         height: 100%;
+
         &:active,
         &visited {
             text-decoration: none;
-
         }
-        
-        &-box {
-            width: 100%;
-            height: 14rem;
-            margin: 2rem 0 0 0;
-            background-image: url("../img/pizzaBuilder.jpg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            transition: all .2s;
-
-            @include respond(phone) {
-                height: 20rem;
-            }
-
-            &:hover {
-                transform: translateX(5%);
-            }
-            &--pizza {
-                background-image: url("../img/pizzaBuilder.jpg");
-            }
-            &--happines {
-                background-image: url("../img/happinesShow.jpg");
-            }
-        }
-    }
-
-    &__p {
-        color: $color-gray-light;
     }
 }

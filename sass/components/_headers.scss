@@ -10,9 +10,15 @@
     }
     @include respond(tab-port) {
         font-size: 6rem;
+        border-left: $border-gray-light-port;
     }
     @include respond(tab-land) {
-        font-size: 8rem;
+        font-size: 6rem;
+        border-left: $border-gray-light-land;
+        width: $width-tab-land;
+    }
+    @include respond(standart-screen) {
+        border-left: $border-gray-light-standart;
     }
 }
 
