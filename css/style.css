@@ -302,6 +302,7 @@ body {
         width: 45%;
         height: 50%; } }
   .projects__link {
+    display: block;
     width: 100%;
     height: 100%; }
     .projects__link:active, .projects__linkvisited {
