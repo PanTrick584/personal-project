@@ -1,37 +1,35 @@
 .h1 {
-    font-size: 3rem;
-    letter-spacing: 7%;
-    padding: 2rem 1rem 1rem 1rem;
-    border-left: $border-gray-light;
-    margin-top: 2rem;
+    font-size: 2.6rem;
+    padding: .5rem;
+
+    writing-mode: vertical-lr;
+    text-orientation: upright;
 
     @include respond(phone) {
-        font-size: 4rem;
+        font-size: 5rem;
     }
     @include respond(tab-port) {
-        font-size: 6rem;
-        border-left: $border-gray-light-port;
+        font-size: 4.4rem;
     }
     @include respond(tab-land) {
         font-size: 6rem;
-        border-left: $border-gray-light-land;
-        width: $width-tab-land;
+        writing-mode: horizontal-tb;
+        text-orientation: inherit;
     }
     @include respond(standart-screen) {
-        border-left: $border-gray-light-standart;
+        font-size: 8rem;
+    }
+    @include respond(big-screen) {
+        font-size: 10rem;
     }
 }
 
 .h2 {
-    font-size: 1.8rem;
-    padding: 1rem;
-    border-left: $border-gray-light;
-    margin-top: 2rem;
+    font-size: 3rem;
+    padding: .5rem;
 
     @include respond(phone) {
-        font-size: 2.2rem;
     }
     @include respond(tab-port) {
-        font-size: 3rem;
     }
 }

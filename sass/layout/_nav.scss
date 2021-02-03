@@ -16,16 +16,16 @@
         text-align: left;
         color: $color-blue-light;
         padding: 1.5rem .3rem 1.5rem 0;
-        margin-left: $margin-phone;
+        // margin-left: $margin-phone;
         margin-top: 1rem;
-        border-left: $border-gray-light;
+        // border-left: $border-gray-light;
 
 
         @include respond(tab-port) {
-            margin-left: $margin-tab-port;
+            // margin-left: $margin-tab-port;
         }
         @include respond(tab-land) {
-            margin-left: $margin-tab-land;
+            // margin-left: $margin-tab-land;
         }
 
     }
@@ -42,13 +42,13 @@
         
 
         &:hover &-span {
-           background-color: $color-gray-dark;
+        //    background-color: $color-gray-dark;
         }
 
         &-span {
             width: 100%;
             height: .3rem;
-            background-color: $color-gray-light;
+            // background-color: $color-gray-light;
             transition: all .2s;
         }
 
@@ -70,7 +70,7 @@
         right: 0;
         width: 50%;
         height: 100vh;
-        background-color: $color-gray-dark;
+        // background-color: $color-gray-dark;
         list-style: none;
         padding: 1rem 0 1rem 1rem;
 

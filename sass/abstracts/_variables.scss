@@ -1,9 +1,9 @@
 
 // COLORS
 
-$color-gray: #3b3c38;
-$color-gray-light: #97a98b;
-$color-gray-dark: #16161a;
+$color-gray:#555555;
+$color-gray-light: #818181;
+$color-gray-dark: #2c2c2c;
 
 $color-blue: #086972;
 $color-blue-light: #4997a0;
@@ -13,34 +13,10 @@ $color-orange: #ff9671;
 $color-orange-light: #ffc8a0;
 $color-orange-dark: #c86745;
 
-//  BORDER
+$color-green: #84ffa3;
+$color-green-light: #b9ffd5;
+$color-green-dark: #4ecb73;
 
-$border-gray-light: .3rem solid $color-gray-light;
-$border-gray-light-port: .5rem solid $color-gray-light;
-$border-gray-light-land: .7rem solid $color-gray-light;
-$border-gray-light-standart: .7rem solid $color-gray-light;
-$border-gray: .3rem solid $color-gray;
-$border-gray-dark: .3rem solid $color-gray-dark;
-
-$border-blue: .3rem solid $color-blue;
-$border-blue-dark: .3rem solid $color-blue-dark;
-$border-orange-dark: .3rem solid $color-orange-dark;
-
-$border-section: .5rem solid $color-gray-dark;
-
-//  MARGINS
-
-$margin-phone: .5rem;
-$margin-p-phone: .8rem;
-
-$margin-tab-port: 2rem;
-$margin-p-tab-port: 2.5rem;
-
-$margin-tab-land: 10rem;
-$margin-p-tab-land: 10.7rem;
-
-// WIDTHS
-
-$width-phone: 80%;
-$width-tab-port: 65%;
-$width-tab-land: 45%;
+$color-rose: #ff756b;
+$color-rose-light: #ffa799;
+$color-rose-dark: #c74440;

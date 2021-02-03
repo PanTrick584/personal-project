@@ -1,15 +1,24 @@
 .container {
-    position: relative;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     background-color: $color-gray;
 }
-header {
-    height: 100vh;
+.section__name {
+    position: relative;
+    background-color: $color-blue-dark;
 }
 .section__story {
-    height: 100%;
+    position: relative;
+    background-color: $color-rose-dark;
 }
 .section__projects {
-    height: 100%;
+    position: relative;
+    background-color: $color-green-dark;
 }
-.section__footer {
+.section__contact {
+    position: relative;
+    background-color: $color-orange-dark;
 }

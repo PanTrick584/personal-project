@@ -1,24 +1,46 @@
 .story {
-    width: $width-phone;
-    height: 100%;
-    margin-left: $margin-phone;
-    color: $color-gray;
+    height: 50vh;
+    width: 50vw;
+    background-color: $color-rose;
+
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    cursor: pointer;
+    transition: all .8s;
 
     @include respond(tab-port) {
-        width: $width-tab-port;
-        margin-left: $margin-tab-port;
+        align-items: flex-end;
+        justify-content: flex-end;
     }
-    @include respond(tab-land) {
+    @include respond(one-k) {
+        height: 100%;
         width: 100%;
-        margin-left: 0;
     }
-    // &__h1 {
+    &__grid {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
 
-    // }
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $color-rose-light;
+        .story__h1 {
+            color: $color-rose-dark;
+        }
+    }
+    &__h1 {
+        color: $color-gray-dark;
+    }
     &__p {
-
+        font-size: 1.6rem;
         @include respond(tab-land) {
-            // margin-left: $margin-p-tab-land;
         }
     }
 }

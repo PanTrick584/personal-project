@@ -20,3 +20,55 @@
     opacity: 1;
     transform: translateX(0);
 }
+.on {
+    display: inline-block !important;
+}
+.off {
+    display: none !important; 
+}
+.left {
+    left: 0;
+}
+.left-move {
+    left: 100%;
+}
+.right {
+    right: 0;
+}
+.right-move {
+    right: 100%;
+}
+.top {
+    top: 0;
+}
+.top-move {
+    top: 100%; 
+}
+.bottom {
+    bottom: 0;
+}
+.bottom-move {
+   bottom: 100%
+}
+.index-small {
+    z-index: 0;
+}
+.index-huge {
+    z-index: 100;
+}
+.color-blue {
+    background-color: $color-blue-light !important;
+    color: $color-blue-dark !important;
+}
+.color-orange {
+    background-color: $color-orange-light !important;
+    color: $color-orange-dark !important;
+}
+.color-green {
+    background-color: $color-green-light !important;
+    color: $color-green-dark !important;
+}
+.color-rose {
+    background-color: $color-rose-light !important;
+    color: $color-rose-dark !important; 
+}

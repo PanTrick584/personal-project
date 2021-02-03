@@ -1,0 +1,96 @@
+.name {
+    height: 50vh;
+    width: 50vw;
+    text-align: left;
+    background-color: $color-blue;
+    position: absolute;
+    top: 0;
+    // additional in class "left"
+    // left: 0px;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    cursor: pointer;
+    transition: all .8s;
+
+    @include respond(tab-port) {
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    @include respond(one-k) {
+        align-items: flex-end;
+        justify-content: center;
+    }
+    &:hover{
+        background-color: $color-blue-light;
+        .name__h1 {
+            color: $color-blue-dark;
+        }
+       
+    }
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        // grid-template-rows: repeat(2, 1fr);
+        @include respond(tab-port) {
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+    &__h1 {
+        transition: all 0 !important;
+        display: inline-block;
+        text-align: right;
+        color: $color-gray-dark;
+    }
+    &__box {
+        position: relative;
+        height: 100%;
+        background-image: url(../img/portret.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &-overlay-max {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba($color-blue-light, .6);
+        }
+        &-overlay-min {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba($color-blue-light, .8);
+        }
+    }
+    &__span-name {
+        color: $color-orange-light;
+    }
+    &__span-last {
+        color: $color-blue-light;
+    }
+
+    &__h2 {
+        color: $color-gray-dark;
+    }
+
+    &__btn {
+        text-align: start;
+        padding: 1rem;
+        // margin: 2rem 0;
+        cursor: pointer;
+
+        &-a:link,
+        &-a:visited {
+            text-decoration: none;
+            color: $color-gray-light;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+    }
+    
+}
