@@ -1,12 +1,10 @@
 .name {
-    height: 50vh;
-    width: 50vw;
+    height: 100%;
+    width: 100%;
     text-align: left;
     background-color: $color-blue;
     position: absolute;
     top: 0;
-    // additional in class "left"
-    // left: 0px;
     z-index: 1;
 
     display: flex;
@@ -31,41 +29,12 @@
         }
        
     }
-    &__grid {
-        display: flex;
-        flex-direction: column;
-        // grid-template-rows: repeat(2, 1fr);
-        @include respond(tab-port) {
-            display: grid !important;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-        }
-    }
+
     &__h1 {
         transition: all 0 !important;
         display: inline-block;
         text-align: right;
-        color: $color-gray-dark;
-    }
-    &__box {
-        position: relative;
-        height: 100%;
-        background-image: url(../img/portret.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        &-overlay-max {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            background-color: rgba($color-blue-light, .6);
-        }
-        &-overlay-min {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            background-color: rgba($color-blue-light, .8);
-        }
+        color: $color-blue-light;
     }
     &__span-name {
         color: $color-orange-light;
@@ -77,7 +46,40 @@
     &__h2 {
         color: $color-gray-dark;
     }
+    &__content {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
 
+        &-box {
+            position: relative;
+            // height: 100%;
+            background-image: url(../img/portret.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            &-overlay-max {
+                position: absolute;
+                // height: 100%;
+                // width: 100%;
+                background-color: rgba($color-blue-light, .6);
+            }
+            &-overlay-mid {
+                position: absolute;
+                // height: 100%;
+                // width: 100%;
+                background-color: rgba($color-blue-light, .7);
+            }
+            
+            &-overlay-min {
+                position: absolute;
+                // height: 100%;
+                // width: 100%;
+                background-color: rgba($color-blue-light, .8);
+            }
+        }
+    }
     &__btn {
         text-align: start;
         padding: 1rem;

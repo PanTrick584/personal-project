@@ -1,0 +1,18 @@
+.header {
+
+    &-one {
+        margin: 5rem;
+        font-size: 4rem;
+        color: #fff;
+        border-bottom: 5px solid #fff;
+        @include respond(tab-port) {
+            font-size: 8rem;
+        }
+        &-img {
+            color: #222908;
+        }
+    }
+    &-two {
+
+    }
+}

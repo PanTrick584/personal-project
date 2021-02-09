@@ -1,10 +1,33 @@
 .container {
-    height: 100vh;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     background-color: $color-gray;
+    height: 100vh;
+    width: 100%;
+    @include respond(tab-land) {
+        flex-direction: row;
+    }
+}
+.container-header {
+    height: 50vh;
+    background-color: #000;
+
+    @include respond(tab-land) {
+        flex: 0 0 50%;
+        height: 100vh;
+    }
+}
+.container-move {
+    height: 50vh;
+    flex: 0 0 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    @include respond(tab-land) {
+        
+        height: 100vh;
+    }
 }
 .section__name {
     position: relative;
@@ -21,4 +44,20 @@
 .section__contact {
     position: relative;
     background-color: $color-orange-dark;
+}
+.fill {
+    height: 100%;
+    width: 100%;
+    background-color: #887634;
+    display: flex;
+    &-reload {
+        height: 100%;
+        width: 100%;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        text-align: right;
+        margin-top: 20%;
+        color: $color-gray-dark;
+        cursor: pointer;
+    }
 }

@@ -1,6 +1,6 @@
 .story {
-    height: 50vh;
-    width: 50vw;
+    height: 100%;
+    width: 100%;
     background-color: $color-rose;
 
     position: absolute;
@@ -18,15 +18,9 @@
         justify-content: flex-end;
     }
     @include respond(one-k) {
-        height: 100%;
-        width: 100%;
+        // height: 100%;
+        // width: 100%;
     }
-    &__grid {
-        display: grid !important;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
     &:hover,
     &:focus,
     &:active {
