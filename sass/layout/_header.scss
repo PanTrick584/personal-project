@@ -1,18 +1,59 @@
 .header {
 
     &-one {
-        margin: 5rem;
-        font-size: 4rem;
+        position: relative;
+        height: 100%;
+        margin: 2rem 2rem 0 2rem;
+        font-size: 3rem;
         color: #fff;
         border-bottom: 5px solid #fff;
         @include respond(tab-port) {
             font-size: 8rem;
         }
         &-img {
-            color: #222908;
+            height: 3rem;
+            width: 3rem;
+            position: relative;
+            background-color: #fff;
+            @include respond(tab-port) {
+                height: 8rem;
+                width: 8rem;
+            }
+            @include respond(tab-land) {
+                height: 8rem;
+                width: 8rem;
+            }
+        }
+        &-mark {
+            background-color: #fff;
+            color: #000;
         }
     }
-    &-two {
-
+    &-content {
+        color: #fff;
+        padding: 2rem;
+        font-size: 1rem;
+        &-general-info {
+            font-size: 1.4rem;
+        }
+        &-pizza-builder {
+            font-size: 1.2rem;
+            
+            @include respond(tab-port) {
+                font-size: 1.8rem;
+            }
+            @include respond(one-k) {
+                font-size: 3rem;
+            }
+        }
+        &-trophy {
+            font-size: 1.2rem;
+            @include respond(tab-port) {
+                font-size: 1.8rem;
+            }
+            @include respond(one-k) {
+                font-size: 3rem;
+            }
+        }
     }
 }

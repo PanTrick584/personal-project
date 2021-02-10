@@ -35,17 +35,33 @@
     }
     &__content {
 
-        &-ul {
-            list-style-type: none;
+        &-h3 {
+            font-size: 1rem;
 
-            &-h3 {
+            @include respond(tab-port) {
                 font-size: 2rem;
             }
-            &-li {
-                font-size: 1rem;
+         
+            cursor: pointer;
+            &:active, 
+            &:focus, 
+            &:hover {
+                background-color: $color-orange-light;
+                color: $color-orange-dark;
+            }
+        }
 
-                @include respond(tab-port) {
-                    font-size: 2rem;
+        &-li {
+            font-size: 2rem;
+            
+            @include respond(one-k) {
+                font-size: 3.6rem;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+                @include respond(tab-land) {
+                    font-size: 3rem;
                 }
             }
         }

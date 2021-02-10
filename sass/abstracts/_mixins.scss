@@ -21,7 +21,7 @@
         @media (min-width: 39.1em ) { @content }; // 625px
     }
     @if $breakpoint == tab-land {
-        @media (min-width: 769px ) { @content }; 
+        @media (min-width: 767px ) { @content }; 
     }
     @if $breakpoint == one-k {
         @media (min-width: 991px ) { @content };

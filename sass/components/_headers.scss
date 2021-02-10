@@ -1,5 +1,5 @@
 .h1 {
-    font-size: 1.4rem;
+    font-size: 1rem !important; 
     padding: .5rem;
 
     // writing-mode: vertical-lr;
@@ -9,15 +9,15 @@
         // font-size: 5rem;
     }
     @include respond(tab-port) {
-        // font-size: 4.4rem;
+        font-size: 2.2rem !important;
     }
     @include respond(tab-land) {
         // font-size: 6rem;
         // writing-mode: horizontal-tb;
         // text-orientation: inherit;
     }
-    @include respond(standart-screen) {
-        // font-size: 8rem;
+    @include respond(one-k) {
+        // font-size: 1.8rem !important;
     }
     @include respond(big-screen) {
         // font-size: 10rem;

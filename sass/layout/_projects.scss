@@ -5,7 +5,6 @@
     color: $color-gray-dark;
 
     position: absolute;
-    left: 0;
 
     display: flex;
     align-items: center;
@@ -61,7 +60,7 @@
         text-align: right;
     }
     &__box{
-        // height: 25vh;
+        height: 100%;
         &-dark{
             background-color: $color-green-dark;
         }
@@ -75,24 +74,18 @@
 
     }
     &__linkBox {
-        // width: 100%;       
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        // align-self: center;
+        height: 100%;       
 
         background-size: cover;
         background-repeat: no-repeat;
-        // @include respond(tab-port) {
-        //     border: 40px solid $color-green;
-        // }
     }
     &__link {
+        height: 100%;
         display: block;
         // width: 100%;
        
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: .8rem;
         font-weight: 700;
         background-color: $color-green;
         color: $color-green-dark;
@@ -100,11 +93,14 @@
         transition: all .6s;
 
         @include respond(tab-port) {
-            font-size: 3.4rem;
-            // height: 100%;
+            font-size: 1rem;
+        }
+
+        @include respond(tab-land) {
+            font-size: 1.2rem;
         }
         @include respond(one-k) {
-            font-size: 2.2rem;
+            font-size: 1.6rem;
         }
         &:hover {
             background-color: $color-green-dark;
