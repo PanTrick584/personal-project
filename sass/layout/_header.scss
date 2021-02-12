@@ -8,6 +8,9 @@
         color: #fff;
         border-bottom: 5px solid #fff;
         @include respond(tab-port) {
+            font-size: 4rem;
+        }
+        @include respond(one-k) {
             font-size: 8rem;
         }
         &-img {
@@ -15,11 +18,15 @@
             width: 3rem;
             position: relative;
             background-color: #fff;
-            @include respond(tab-port) {
-                height: 8rem;
-                width: 8rem;
-            }
+            // @include respond(tab-port) {
+            //     height: 8rem;
+            //     width: 8rem;
+            // }
             @include respond(tab-land) {
+                height: 5rem;
+                width: 5rem;
+            }
+            @include respond(one-k) {
                 height: 8rem;
                 width: 8rem;
             }
@@ -31,14 +38,34 @@
     }
     &-content {
         color: #fff;
-        padding: 2rem;
+        padding: 2rem 2rem 0 2rem;
         font-size: 1rem;
+        &-story-display {
+            display: flex;
+            height: 28vh;
+            @include respond(one-k) {
+                height: 70vh;
+            }
+        }
+        &-normal-display {
+            @include respond(one-k) {
+                display: block;
+                height: auto;
+            }
+        }
         &-general-info {
+            background-color: #fff;
+            color: #000;
             font-size: 1.4rem;
+            height: min-content;
+            @include respond(one-k) {
+                font-size: 3rem;
+            }
         }
         &-pizza-builder {
+            background-color: #fff;
+            color: #000;
             font-size: 1.2rem;
-            
             @include respond(tab-port) {
                 font-size: 1.8rem;
             }
@@ -47,6 +74,8 @@
             }
         }
         &-trophy {
+            background-color: #fff;
+            color: #000;
             font-size: 1.2rem;
             @include respond(tab-port) {
                 font-size: 1.8rem;

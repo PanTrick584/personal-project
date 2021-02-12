@@ -66,4 +66,9 @@
             }
         }
     }
+    &-info {
+        @include respond(one-k) {
+            font-size: 3rem;
+        }
+    }
 }

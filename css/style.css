@@ -14,6 +14,14 @@ body {
   font-weight: 400;
   background-color: #555555; }
 
+.letter {
+  background-color: #000;
+  color: #fff; }
+
+.letter-white {
+  background-color: #fff;
+  color: #000; }
+
 .transition {
   transition: all 1s cubic-bezier(0.48, 0.36, 0.5, 1.31); }
 
@@ -167,6 +175,30 @@ body {
       color: #818181;
       font-size: 1.8rem;
       font-weight: 700; }
+  .name-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 1rem; }
+    .name-container-box {
+      font-size: 2rem;
+      font-family: inherit;
+      border-bottom: 5px solid #fff; }
+      @media (min-width: 767px) {
+        .name-container-box {
+          font-size: 4rem; } }
+      .name-container-box img {
+        height: 2rem;
+        width: 2rem;
+        background-color: #fff; }
+        @media (min-width: 767px) {
+          .name-container-box img {
+            height: 5rem;
+            width: 5rem; } }
+        @media (min-width: 991px) {
+          .name-container-box img {
+            height: 8rem;
+            width: 8rem; } }
 
 .nav {
   width: 100%;
@@ -269,6 +301,40 @@ body {
     color: #2c2c2c; }
   .story__p {
     font-size: 1.6rem; }
+  .story-info p {
+    background-color: #fff;
+    color: #000;
+    font-size: 1.2rem; }
+    @media (min-width: 767px) {
+      .story-info p {
+        font-size: 2rem; } }
+    @media (min-width: 991px) {
+      .story-info p {
+        font-size: 3rem; } }
+  .story-btn {
+    display: flex;
+    flex-direction: column;
+    padding: 0 .5rem;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    visibility: visible;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    border-left: 5px solid #fff;
+    color: #fff; }
+    .story-btn p {
+      font-size: 1.2rem;
+      color: #000; }
+      @media (min-width: 767px) {
+        .story-btn p {
+          font-size: 2rem; } }
+      @media (min-width: 991px) {
+        .story-btn p {
+          font-size: 3rem; } }
 
 .projects {
   height: 100%;
@@ -392,6 +458,9 @@ body {
       @media (min-width: 767px) {
         .contact__content-li a {
           font-size: 3rem; } }
+  @media (min-width: 991px) {
+    .contact-info {
+      font-size: 3rem; } }
 
 .header-one {
   position: relative;
@@ -402,17 +471,20 @@ body {
   border-bottom: 5px solid #fff; }
   @media (min-width: 39.1em) {
     .header-one {
+      font-size: 4rem; } }
+  @media (min-width: 991px) {
+    .header-one {
       font-size: 8rem; } }
   .header-one-img {
     height: 3rem;
     width: 3rem;
     position: relative;
     background-color: #fff; }
-    @media (min-width: 39.1em) {
-      .header-one-img {
-        height: 8rem;
-        width: 8rem; } }
     @media (min-width: 767px) {
+      .header-one-img {
+        height: 5rem;
+        width: 5rem; } }
+    @media (min-width: 991px) {
       .header-one-img {
         height: 8rem;
         width: 8rem; } }
@@ -422,11 +494,29 @@ body {
 
 .header-content {
   color: #fff;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   font-size: 1rem; }
+  .header-content-story-display {
+    display: flex;
+    height: 28vh; }
+    @media (min-width: 991px) {
+      .header-content-story-display {
+        height: 70vh; } }
+  @media (min-width: 991px) {
+    .header-content-normal-display {
+      display: block;
+      height: auto; } }
   .header-content-general-info {
-    font-size: 1.4rem; }
+    background-color: #fff;
+    color: #000;
+    font-size: 1.4rem;
+    height: min-content; }
+    @media (min-width: 991px) {
+      .header-content-general-info {
+        font-size: 3rem; } }
   .header-content-pizza-builder {
+    background-color: #fff;
+    color: #000;
     font-size: 1.2rem; }
     @media (min-width: 39.1em) {
       .header-content-pizza-builder {
@@ -435,6 +525,8 @@ body {
       .header-content-pizza-builder {
         font-size: 3rem; } }
   .header-content-trophy {
+    background-color: #fff;
+    color: #000;
     font-size: 1.2rem; }
     @media (min-width: 39.1em) {
       .header-content-trophy {
